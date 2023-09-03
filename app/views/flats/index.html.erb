@@ -1,0 +1,54 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%= link_to "/", class: "navbar-brand" do %>
+      Simple AirBnB
+    <% end %>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <%= link_to "Home", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Messages", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <%= link_to "Action", "#", class: "dropdown-item" %>
+            <%= link_to "Another action", "#", class: "dropdown-item" %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <div class="card-trip">
+      <%= image_tag  'windoge.jpg' %>
+
+        <div class="card-trip-footer">
+          <div class="card-trip-footer-text">
+            <h2>Title here</h2>
+            <p>Short description here</p>
+          </div>
+          <h2>99.99 €</h2>
+          <img
+            src="../images/img-profile-johanna.jpg"
+            alt="profile picture johanna maier"
+            class="avatar"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-3">Hello</div>
+    <div class="col-3">Hello</div>
+  </div>
+</div>
